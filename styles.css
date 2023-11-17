@@ -121,12 +121,24 @@ footer {
     
 }
 
-.outlined-button:hover {
-    background-color: #333;
-    color: #fff;
+.icon:hover {
+    border: 2px solid #000;
+    stroke: black;
 }
 
+
 .icon {
-    margin-right: 8px;
-    /* Ajusta el espacio entre el icono y el texto */
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+
+.icon:hover svg {
+    stroke: #000; /* Cambia este color según tus preferencias */
 }
