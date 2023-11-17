@@ -1,5 +1,6 @@
 import { dibujarPoligono } from "./dibujarPoligono.js";
 import "./menu.js";
+import "./obtenerTemperatura.js"
 
 
 var canvas = document.getElementById("miCanvas");

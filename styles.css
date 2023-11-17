@@ -11,15 +11,23 @@ body {
 
 header {
     color: #fff;
-    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 
 nav {
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    /* Fija la barra de navegación en la parte superior de la página */
+    z-index: 1;
 }
+
+
 
 ul.menu {
     list-style-type: none;
@@ -60,6 +68,7 @@ a {
     height: 250px;
     background-color: #6d2841;
     clip-path: polygon(0 0, 100% 0%, 100% 74%, 50% 100%, 0 74%);
+    z-index: 2;
 }
 
 .no {
@@ -140,8 +149,8 @@ main {
     /* Cambia este color según tus preferencias */
 }
 
-.gradiente{
-    background: rgb(88,32,53);
-    background: linear-gradient(90deg, rgba(88,32,53,1) 0%, rgba(228,82,136,1) 91%, rgba(190,122,146,1) 100%);
+.gradiente {
+    background: rgb(88, 32, 53);
+    background: linear-gradient(90deg, rgba(88, 32, 53, 1) 0%, rgba(228, 82, 136, 1) 91%, rgba(190, 122, 146, 1) 100%);
     color: #fff;
 }
