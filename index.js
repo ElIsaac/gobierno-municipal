@@ -1,7 +1,8 @@
+import { cambiarPagina } from "./cambiarPagina.js";
 import { dibujarPoligono } from "./dibujarPoligono.js";
 import "./menu.js";
 import "./obtenerTemperatura.js"
-
+ cambiarPagina('inicio');
 
 var canvas = document.getElementById("miCanvas");
 canvas.width = window.innerWidth;

@@ -1,35 +1,47 @@
+:root {
+    --color-primario: #3498db;
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Asegura que el contenido se extienda al menos al 100% de la altura de la ventana */
 }
 
 header {
     color: #fff;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    font-size: 1.2rem;
+}
+
+header p {
+    margin-left: 10rem;
+    
+}
+
+.espaciado {
+    max-width: 60%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 10px;
     position: sticky;
     top: 0;
-    /* Fija la barra de navegación en la parte superior de la página */
     z-index: 1;
 }
 
-
-
-ul.menu {
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -39,9 +51,11 @@ ul.menu {
 
 li {
     position: relative;
-    margin: 0;
-    border: none;
+    width: 10rem;
+    text-decoration: none;
+    list-style: none;
 }
+
 
 a {
     color: #fff;
@@ -53,7 +67,9 @@ a {
 .submenu {
     display: none;
     position: absolute;
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 20vw;
+    
 }
 
 .submenu-item:hover .submenu {
@@ -63,29 +79,31 @@ a {
 .logo {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100px;
-    height: 250px;
+    left: 1rem;
+    width: 6rem;
+    height: 9.6rem;
     background-color: #6d2841;
     clip-path: polygon(0 0, 100% 0%, 100% 74%, 50% 100%, 0 74%);
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.no {
+.titulo {
+    margin-right: 90px;
+}
+
+.logo-img {
     position: relative;
-    display: block;
-    top: 30%;
+    top: -10%;
     left: 0;
-    width: 100px;
-    height: 100px;
+    width: 75%;
 }
 
 main {
     flex: 1;
-    /* Hace que el contenido principal se expanda para ocupar el espacio restante */
 }
-
-
 
 .footer {
     padding: 10px;
@@ -96,26 +114,8 @@ main {
 
 .admin-logo {
     max-width: 20rem;
-    /* ajusta el ancho máximo de tu logo según sea necesario */
 }
 
-.figura {
-    background-color: #333;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 48% 48%, 0 0);
-}
-
-.espaciado {
-    max-width: 60%;
-    /* Puedes ajustar este valor según tus necesidades */
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    /* Espaciado izquierdo */
-    padding-right: 15px;
-    /* Espaciado derecho */
-    box-sizing: border-box;
-    /* Evita que el padding afecte el ancho total */
-}
 
 .socialmedia {
     display: inline;
@@ -154,3 +154,21 @@ main {
     background: linear-gradient(90deg, rgba(88, 32, 53, 1) 0%, rgba(228, 82, 136, 1) 91%, rgba(190, 122, 146, 1) 100%);
     color: #fff;
 }
+
+.subpestania{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+.pestania{
+    width: 20vw;
+    padding: 0.65rem 0;
+}
+.pestania:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.subpestania:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+

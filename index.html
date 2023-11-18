@@ -5,73 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-    <style>
-
-    </style>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Gobierno municipal</title>
 </head>
 
 <body>
-    <header class="gradiente header">
-        <p>Gobierno Municipal 2021 - 2024 / H. Ayuntamiento de Juárez</p>
-        <div id="temperatura">
-
-        </div>
+    <header class="gradiente">
+        <p class="titulo">Gobierno Municipal 2021 - 2024 / H. Ayuntamiento de Juárez</p>
+        <div id="temperatura"></div>
     </header>
-    <a href="#" class="logo" onclick="cambiarPagina('inicio')">
-        <img class="no" src="./images/favicon.ico" alt="Logo">
-    </a>
-    <!-- ... (otras partes del HTML) -->
 
-<nav id="menuNav">
-    <ul class="menu">
-        <li class="submenu-item">
-            Gobierno municipal
-            <ul class="submenu">
-                <li><a href="#" id="cabildoLink">Cabildo</a></li>
-                <li><a href="#" id="sindicaturaLink">Sindicatura</a></li>
-            </ul>
-        </li>
-        <li class="submenu-item">
-            Denuncias y quejas
-            <ul class="submenu">
-                <li><a href="#" id="servidoresLink">Contra servidores</a></li>
-                <li><a href="#" id="serviciosLink">Solicitar servicios</a></li>
-            </ul>
-        </li>
-        <li><a href="#" id="transparenciaLink">Transparencia municipal</a></li>
-        <li><a href="#" id="presupuestoLink">Presupuesto participativo</a></li>
-    </ul>
-</nav>
-
-<!-- ... (otras partes del HTML) -->
-
-
-
-
-
-
-
+    <nav id="menuNav">
+        <ul class="menu">
+            <li>
+                <a href="#" class="logo" id="inicioLink">
+                    <img class="logo-img" src="./images/ESCUDO-DE-ARMAS.png" alt="Logo">
+                </a>
+            </li>
+            <li class="submenu-item pestania">
+                <a href="#" id="cabildoLink">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg fill="#fff" height="15" width="15" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512 512" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M512,199.452v-86.828L256,39.481L0,112.624v86.828h34.133v170.667H0v102.4h512v-102.4h-34.133V199.452H512z
+			                    M477.867,438.386H34.133v-34.133h443.733V438.386z M68.267,370.119V199.452H102.4v170.667H68.267z M136.533,370.119V199.452
+			                    h34.133v170.667H136.533z M204.8,370.119V199.452h34.133v170.667H204.8z M273.067,370.119V199.452H307.2v170.667H273.067z
+			                    M341.333,370.119V199.452h34.133v170.667H341.333z M409.6,370.119V199.452h34.133v170.667H409.6z M34.133,165.319v-26.948
+			                    L256,74.98l221.867,63.39v26.949H34.133z" />
+                            </g>
+                        </g>
+                    </svg>
+                    Gobierno <br>municipal
+                </a>
+                <ul class="submenu">
+                    <li class="subpestania"><a href="#" id="cabildoLink">Cabildo</a></li>
+                    <li class="subpestania"><a href="#" id="sindicaturaLink">Sindicatura</a></li>
+                </ul>
+            </li>
+            <li class="submenu-item pestania">
+                <a id="servidoresLink" href="#">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg fill="#fff" width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5,13.9V22a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V14.618L15.553,16.9A1,1,0,0,0,17,16V2a1,1,0,0,0-1.447-.895L9.764,4H6a5,5,0,0,0-1,9.9ZM9,21H7V14H9ZM6,6h4a1,1,0,0,0,.447-.105L15,3.618V14.382l-4.552-2.277c-.009,0-.02,0-.029-.006a.983.983,0,0,0-.412-.1H6A3,3,0,0,1,6,6ZM23,9a4,4,0,0,1-4,4,1,1,0,0,1,0-2,2,2,0,0,0,0-4,1,1,0,0,1,0-2A4,4,0,0,1,23,9Z" />
+                    </svg>
+                    Denuncias <br>y quejas
+                </a>
+                <ul class="submenu">
+                    <li class="subpestania"><a href="#" id="servidoresLink">Contra <br>servidores</a></li>
+                    <li class="subpestania"><a href="#" id="serviciosLink">Solicitar <br>
+                        servicios</a></li>
+                </ul>
+            </li>
+            <li class="pestania"><a href="#" id="transparenciaLink">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Transparencia <br>municipal
+                </a></li>
+            <li class="pestania">
+                <a href="#" id="presupuestoLink">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.29289 1.29289C9.48043 1.10536 9.73478 1 10 1H18C19.6569 1 21 2.34315 21 4V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V8C3 7.73478 3.10536 7.48043 3.29289 7.29289L9.29289 1.29289ZM18 3H11V8C11 8.55228 10.5523 9 10 9H5V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V4C19 3.44772 18.5523 3 18 3ZM6.41421 7H9V4.41421L6.41421 7ZM7 13C7 12.4477 7.44772 12 8 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8C7.44772 14 7 13.5523 7 13ZM7 17C7 16.4477 7.44772 16 8 16H16C16.5523 16 17 16.4477 17 17C17 17.5523 16.5523 18 16 18H8C7.44772 18 7 17.5523 7 17Z"
+                            fill="#fff" />
+                    </svg>
+                    Presupuesto <br>participativo
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <main id="contenido">
         <!-- Aquí se cargarán las páginas -->
     </main>
 
-
-
-
-
-
-    
     <canvas id="miCanvas"></canvas>
+
     <footer class="gradiente">
         <div class="footer espaciado">
             <div>
                 <img class="admin-logo" src="./images/LOGO-ADMON-2021-2024-horizontal2-BLANCO.png" alt="">
             </div>
             <div>
+                <h4>Destacados</h4>
                 <ul>
-                    <h4>Destacados</h4>
                     <li>Dependencias</li>
                     <li>Sala de Prensa</li>
                     <li>Denuncia Ciudadana</li>
@@ -93,24 +119,37 @@
         <div class="footer espaciado">
             <div class="links">
                 <a href="https://www.facebook.com/GobiernoCdJuarez/" class="icon">
-                    <svg id="miSvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                    <svg id="miSvg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-facebook">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                     </svg>
                 </a>
                 <a href="https://www.youtube.com/channel/UC-GVeZjSK9YQr0PL7rlvcTg/feed" class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-youtube">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                        </path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
                 </a>
                 <a href="https://twitter.com/municipiojuarez" class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-twitter">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                        </path>
+                    </svg>
                 </a>
             </div>
             <div class="creditos"><b>desarrollado por</b> el isaac y el noel</div>
         </div>
     </footer>
-    
+
     <script type="module" src="index.js"></script>
-    
-    
 </body>
 
 </html>
