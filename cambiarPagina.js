@@ -1,7 +1,7 @@
 // cambiarPagina.js
 export function cambiarPagina(pagina) {
     var contenido = document.getElementById('contenido');
-    fetch(`pages/${pagina}.html`)
+    fetch(`pages/${pagina}/${pagina}.html`)
       .then((response) => response.text())
       .then((html) => {
         contenido.innerHTML = html;
