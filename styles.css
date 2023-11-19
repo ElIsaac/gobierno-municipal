@@ -1,6 +1,6 @@
 :root {
     --color-primario: #3498db;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
 
 header p {
     margin-left: 10rem;
-    
+
 }
 
 .espaciado {
@@ -69,7 +70,7 @@ a {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     width: 20vw;
-    
+
 }
 
 .submenu-item:hover .submenu {
@@ -155,22 +156,86 @@ main {
     color: #fff;
 }
 
-.subpestania{
+.subpestania {
     margin: 0;
     padding: 0;
     width: 100%;
     padding: 15px 0;
 }
-.pestania{
+
+.pestania {
     width: 20vw;
     padding: 0.65rem 0;
 }
-.pestania:hover{
+
+.pestania:hover {
     background-color: rgba(0, 0, 0, 1);
 }
-.subpestania:hover{
+
+.subpestania:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
-a.logo:hover{
+
+a.logo:hover {
     background-color: #000;
 }
+
+
+
+.slider {
+    width: 100vw;
+    /* 100% del ancho de la ventana */
+    height: 70vh;
+    overflow: hidden;
+    /* Para recortar cualquier parte de la imagen que esté fuera del contenedor */
+    position: relative;
+    /* Para posicionar correctamente la imagen dentro del contenedor */
+}
+
+.slider-item img {
+    width: 100%;
+    /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 100%;
+    /* La imagen ocupa el 100% de la altura del contenedor */
+    object-fit: cover;
+    /* La imagen se ajusta para cubrir todo el contenedor sin distorsión */
+    position: absolute;
+    /* Para posicionar la imagen en relación con el contenedor */
+    top: 0;
+    left: 0;
+}
+
+/* La regla .fade se aplica a elementos con la clase 'fade' */
+.fade {
+    /* Se especifica la animación llamada 'fade', con una duración de 1.9 segundos,
+       una función de temporización 'ease-in-out' (inicio y final suaves),
+       y se repite infinitamente */
+    animation: fade 1.9s ease-in-out infinite;
+}
+
+/* Definición de la animación llamada 'fade' mediante keyframes */
+@keyframes fade {
+    /* Definición del estado inicial del keyframe:
+       la opacidad comienza en 0.7 (70%) */
+    from {
+        opacity: 0.7;
+    }
+
+    /* Definición del estado final del keyframe:
+       la opacidad llega a 1 (100%) */
+    to {
+        opacity: 1;
+    }
+}
+/*
+@keyframes nombreDeLaAnimacion {
+     Definición de estados intermedios 
+    from {
+      Estilos del estado inicial 
+    }
+  
+    to {
+      Estilos del estado final 
+    }
+}
+*/
