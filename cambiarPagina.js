@@ -41,7 +41,7 @@ export function cambiarPagina(pagina) {
         case "transparencia":
           contenido.innerHTML = html;
           break;
-        case "presupuestos":
+        case "presupuesto":
           contenido.innerHTML = html;
 
           break;
