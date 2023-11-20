@@ -2,7 +2,7 @@ export function mostrarDenuncias() {
   // Obtiene el arreglo de denuncias del localStorage
   const denunciasGuardadas =
     JSON.parse(localStorage.getItem("datosDenuncia")) || [];
-  var contenido = document.getElementById("quejascont");
+  let contenido = document.getElementById("quejascont");
 
   // Selecciona el contenedor donde se mostrarán las denuncias
   const contenedorDenuncias = document.createElement("div");
@@ -24,8 +24,12 @@ export function mostrarDenuncias() {
     // Crea el body con el motivo de la denuncia
     const body = document.createElement("div");
     body.classList.add("card-body");
-    body.textContent = "Fecha y Hora: " + denuncia.datosHechos.fechaHora;
-    body.textContent += " Motivo: " + denuncia.datosHechos.hechos;
+    const fyh = document.createElement('p')
+    const motivo = document.createElement('p')
+    motivo.textContent="Motivo: " + denuncia.datosHechos.hechos;
+    fyh.textContent = "Fecha y Hora: " + denuncia.datosHechos.fechaHora;
+    body.appendChild(fyh)
+    body.appendChild(motivo)
 
     // Crea el footer con la fecha y hora de la denuncia
     const footer = document.createElement("div");
@@ -51,7 +55,7 @@ export function mostrarDenuncias() {
 }
 
 function eliminarDenuncias() {
-  var contenido = document.getElementById("quejascont");
+  let contenido = document.getElementById("quejascont");
 
   // Elimina todos los hijos del elemento 'contenido'
   while (contenido.firstChild) {
