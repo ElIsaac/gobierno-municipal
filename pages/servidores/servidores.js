@@ -59,7 +59,7 @@ export function enviar(event) {
     localStorage.setItem("datosDenuncia", JSON.stringify(arr));
   }
   mostrarOk();
-  
+  limpiarInputs();
   console.log(
     "Datos de la denuncia almacenados en localStorage:",
     JSON.stringify(datosCompletos)
@@ -78,5 +78,20 @@ function mostrarOk() {
   cont.appendChild(msg);
   setTimeout(() => {
     cont.removeChild(msg);
-  }, 1500);
+  }, 2000);
+}
+function limpiarInputs() {
+  const inputs = document.querySelectorAll('input, textarea'); 
+
+  inputs.forEach(input => {
+    if (input.type !== 'submit' && input.type !== 'button') {
+      input.value = ''; 
+    }
+  });
+
+  // También puedes limpiar los textarea si es necesario
+  const textareas = document.querySelectorAll('textarea');
+  textareas.forEach(textarea => {
+    textarea.value = '';
+  });
 }
