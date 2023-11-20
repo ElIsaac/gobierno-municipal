@@ -330,13 +330,12 @@ button.eliminar{
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    grid-template-columns: repeat(3, 0.5fr); /* Tres columnas de igual ancho */
     gap: 20px; /* Espacio entre las cajas */
   }
   
   .galeria-item {
     /* Estilos de cada elemento dentro del grid */
-    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
     margin: auto;
