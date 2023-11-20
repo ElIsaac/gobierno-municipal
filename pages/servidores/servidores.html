@@ -1,3 +1,71 @@
-<div class="espaciado">
+<div id="servidores" class="espaciado">
     <h1>servidores</h1>
+
+
+
+    <form id="registrar">
+        <p>Datos del ciudadano</p>
+        <hr>
+        <div class="linea">
+            <div class="cont">
+                <input id="nombre" name="nombre" placeholder="Nombre">
+                <input id="apaterno" name="apaterno" placeholder="Apellido Paterno">
+                <input id="amaterno" name="amaterno" placeholder="Apellido Materno">
+                <input type="radio" name="genero" id="M" value="M"> Mujer
+                <input type="radio" name="genero" id="H" value="H"> <label for="H">Hombre</label>
+
+            </div>
+            <div class="cont">
+                <input id="direccion" name="direccion" placeholder="Dirección">
+                <input name="num" id="num" placeholder="No.">
+                <input id="col" name="col" placeholder="Colonia">
+                <input id="correo" name="correo" placeholder="Correo Electrónico*">
+                <input id="telf" name="tel" placeholder="Teléfono*" maxlength="10">
+                <input id="cel" name="cel" placeholder="Celular" maxlength="10">
+                <input id="edad" name="edad" placeholder="Edad" maxlength="3">
+                <select name="estado_civil" id="estado_civil">
+                    <option value="">ESTADO CIVIL</option>
+                    <option value="SOLTERO(A)">SOLTERO(A)</option>
+                    <option value="CASADO(A)">CASADO(A)</option>
+                    <option value="VIUDO(A)">VIUDO(A)</option>
+                    <option value="DIVORCIADO(A)">DIVORCIADO(A)</option>
+                    <option value="UNION LIBRE">UNION LIBRE</option>
+                </select>
+            </div>
+        </div>
+
+
+        <p>Datos del Servidor publico</p>
+        <hr>
+        <div class="linea">
+            <div class="cont">
+                <input id="nombreServidor" name="nombreServidor" placeholder="Nombre del servidor">
+                <input name="unidad" id="unidad" placeholder="Numero de unidad">
+            </div>
+            <div class="cont">
+                <input name="cargo" id="cargo" placeholder="Cargo del servidor">
+                <input name="distrito" id="distrito" placeholder="Distrito">
+            </div>
+        </div>
+
+        <p>Relato de los hechos</p>
+        <hr>
+        <div class="linea">
+            <div class="cont">
+                <input type="datetime-local" id="fechaHora" name="fechaHora">
+
+            </div>
+            <div class="cont">
+                <textarea id="hechos" name="hechos" placeholder="Describa los hechos..." rows="6"></textarea>
+
+
+            </div>
+        </div>
+
+
+        <button id="enviar">Registrar Denuncia</button>
+
+    </form>
+
+
 </div>

@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             temp.innerHTML = `<p>Temperatura: ${Math.round(data.main.temp)}°C <img src="./images/cloud.png" width="26" alt=""></p>`
-            console.log(data)
         })
         .catch(error => temp.innerHTML ='<p>Error al obtener los datos del clima</p>');
 });
