@@ -2,13 +2,13 @@ export function enviar(event) {
   event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
 
   // Función para obtener el valor de un campo o devolver nulo si está vacío
-  const obtenerValor = function (id) {
+  const obtenerValor = (id) => {
     const elemento = document.getElementById(id);
     return elemento ? elemento.value : null;
   };
 
   // Obtiene los valores de los campos del formulario
-  const id = `id_${Date.now()}`
+  const id = `id_${Date.now()}`;
   const datosCiudadano = {
     nombre: obtenerValor("nombre"),
     apaterno: obtenerValor("apaterno"),
@@ -50,22 +50,33 @@ export function enviar(event) {
   const datosGuardados = localStorage.getItem("datosDenuncia");
 
   if (datosGuardados) {
-    // Si ya hay datos, conviértelos de JSON a objeto
     const datosPrevios = JSON.parse(datosGuardados);
-
-    // Agrega el nuevo conjunto de datos al arreglo existente
     datosPrevios.push(datosCompletos);
-
-    // Actualiza el localStorage con el arreglo actualizado
     localStorage.setItem("datosDenuncia", JSON.stringify(datosPrevios));
   } else {
     // Si no hay datos previos, crea un arreglo con el nuevo conjunto de datos
     const arr = [datosCompletos];
-
-    // Almacena el arreglo en localStorage
     localStorage.setItem("datosDenuncia", JSON.stringify(arr));
   }
+  mostrarOk();
+  
+  console.log(
+    "Datos de la denuncia almacenados en localStorage:",
+    JSON.stringify(datosCompletos)
+  );
+}
 
-  // Puedes imprimir un mensaje en la consola si lo deseas
-  console.log("Datos de la denuncia almacenados en localStorage:", JSON.stringify(datosCompletos));
+function mostrarOk() {
+  const cont = document.getElementById("servidoresdiv");
+  console.log(cont);
+
+  const msg = document.createElement("div");
+  msg.classList.add("msg");
+  const h = document.createElement("h3");
+  h.textContent = "Servidor denunciado";
+  msg.appendChild(h);
+  cont.appendChild(msg);
+  setTimeout(() => {
+    cont.removeChild(msg);
+  }, 1500);
 }

@@ -21,7 +21,7 @@ export function cambiarPagina(pagina) {
         case "sindicatura":
           contenido.innerHTML = html;
           break;
-        case "servidores":1
+        case "servidores":
           contenido.innerHTML = html;
           // Captura el formulario al cargar la página
           const btn = document.getElementById("enviar");

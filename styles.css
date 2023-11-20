@@ -364,3 +364,21 @@ button.eliminar{
     transform: translate(-50%, -50%);
     /* Ajusta la posición según sea necesario para centrar la imagen */
   }
+
+  .msg {
+    margin-top: 30px;
+    width: 100%;
+    height: 20px; /* Ajusté la altura para dar más espacio al mensaje */
+    background-color: #7dc47f; /* Utilicé un tono diferente de azul */
+    padding: 5px; /* Aumenté el espacio interno para que se vea más espaciado */
+    border-radius: 5px; /* Agregué esquinas redondeadas */
+  }
+  
+  .msg h3 {
+    
+    color: #fff;
+    margin: 0; /* Eliminé el margen predeterminado del h3 para un aspecto más limpio */
+    font-size: 18px; /* Aumenté el tamaño de la fuente */
+    text-align: center; /* Centré el texto dentro del div */
+  }
+  
