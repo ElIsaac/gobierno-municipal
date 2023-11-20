@@ -18,7 +18,7 @@ export function cambiarPagina(pagina) {
           contenido.innerHTML = html;
           console.log("cabildo");
           break;
-        case "sidndicatura":
+        case "sindicatura":
           contenido.innerHTML = html;
           break;
         case "servidores":1
