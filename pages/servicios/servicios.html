@@ -1,3 +1,29 @@
 <div id="servicios" class="espaciado">
     <h1>servicios</h1>
+    <hr>
+    <div class="card" style="width: 100%;">
+        <div class="card-body">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+          
+                <label for="documento">Tipo de Documento:</label>
+                <select id="documento" name="documento" required>
+                  <option value="dni">identificacion</option>
+                  <option value="pasaporte">Pasaporte</option>
+                </select>
+          
+               <label for="tramite">Tipo de Trámite:</label>
+                <select id="tramite" name="tramite" required>
+                  <option value="licencia">Licencia</option>
+                  <option value="pasaporte">Predial</option>
+                  <option value="pasaporte">Pasaporte</option>
+                  <option value="permiso">Constancias</option>
+                </select>
+          
+                <button type="submit">Enviar Solicitud</button>
+              </form>
+        </div>
+    </div>
+  
 </div>
